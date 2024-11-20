@@ -1,207 +1,133 @@
-/* Reset some basic styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and Font */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
-.container {
-    width: 90%;
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Navigation Bar */
-nav {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav .logo h2 {
-    color: white;
-    margin-left: 20px;
+header h1 {
+    font-size: 2em;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: #fff;
+    font-size: 1.2em;
 }
 
-/* Hero Section */
-.hero {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 100px 20px;
-    background-image: url('hero-bg.jpg'); /* Optional background image */
-    background-size: cover;
-    color: white;
+nav ul li a:hover {
+    color: #f4b400;
 }
 
-.hero h1 {
-    font-size: 3rem;
+/* Main Content */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.blog-posts {
+    flex: 3;
+}
+
+.post {
+    background-color: #fff;
     margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.hero .btn {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    border-radius: 5px;
-}
-
-/* Skills Section */
-.skills {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.skills h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
-
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #fff;
-    padding: 30px;
-    margin: 10px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 10px;
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Projects Section */
-.projects {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
-
-.projects .card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.projects .card {
-    background-color: #f4f4f4;
     padding: 20px;
-    margin: 10px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.projects .card h3 {
-    font-size: 1.5rem;
+.post h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.post-meta {
+    color: #777;
+    font-size: 0.9em;
     margin-bottom: 10px;
 }
 
-.projects .card p {
-    font-size: 1rem;
-    color: #666;
+.post p {
+    font-size: 1.1em;
+    color: #555;
 }
 
-.projects .card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #333;
-    font-weight: bold;
+.post a {
     text-decoration: none;
+    color: #f4b400;
+    font-weight: bold;
 }
 
-.projects .card a:hover {
-    text-decoration: underline;
+.post a:hover {
+    color: #333;
+}
+
+/* Sidebar */
+aside {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 1.1em;
+    color: #555;
 }
 
 /* Footer */
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 10px 0;
+    margin-top: 40px;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    nav ul {
-        display: block;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 80%;
-        margin: 20px 0;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
+footer p {
+    font-size: 1em;
 }
 

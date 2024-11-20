@@ -3,85 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Personal Website</title>
+    <title>My Personal Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <h2>[Your Name]</h2>
-            </div>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <!-- Header Section -->
+    <header>
         <div class="container">
-            <h1>Welcome to My Personal Website</h1>
-            <p>I'm [Your Name], a passionate web developer and lifelong learner.</p>
-            <a href="#projects" class="btn">View My Projects</a>
+            <h1>My Personal Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>HTML & CSS</h3>
-                    <p>Building responsive and visually appealing websites.</p>
-                </div>
-                <div class="card">
-                    <h3>JavaScript</h3>
-                    <p>Interactive web features using JavaScript and frameworks.</p>
-                </div>
-                <div class="card">
-                    <h3>Python</h3>
-                    <p>Experienced in scripting and data manipulation with Python.</p>
-                </div>
-            </div>
+    <!-- Main Content Section -->
+    <main class="container">
+        <div class="blog-posts">
+            <article class="post">
+                <h2>Blog Post Title 1</h2>
+                <p class="post-meta">Posted on November 20, 2024 by John Doe</p>
+                <p>This is the introduction of the first blog post. Here you can write a few lines about the topic of your post...</p>
+                <a href="#">Read more</a>
+            </article>
+            <article class="post">
+                <h2>Blog Post Title 2</h2>
+                <p class="post-meta">Posted on November 18, 2024 by John Doe</p>
+                <p>This is the introduction of the second blog post. You can share your thoughts and ideas about any topic here...</p>
+                <a href="#">Read more</a>
+            </article>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Project 1</h3>
-                    <p>A brief description of my first project.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div class="card">
-                    <h3>Project 2</h3>
-                    <p>A brief description of my second project.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div class="card">
-                    <h3>Project 3</h3>
-                    <p>A brief description of my third project.</p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Sidebar Section -->
+        <aside>
+            <h3>About Me</h3>
+            <p>Hi, I'm John Doe. I'm passionate about writing, technology, and travel. This blog is my space to share my thoughts with the world.</p>
+        </aside>
+    </main>
 
-    <!-- Footer (Contact Section) -->
-    <footer id="contact">
-        <div class="container">
-            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-        </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
     </footer>
 
 </body>
