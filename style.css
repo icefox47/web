@@ -54,23 +54,33 @@ nav ul li a:hover {
 
 /* Main Content */
 .container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
     max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
+main.container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .blog-posts {
-    flex: 3;
+    display: grid;
+    gap: 2rem;
 }
 
 .post {
-    background-color: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
+    background-color: var(--bg-secondary);
+    padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-3px);
 }
 
 .post h2 {
@@ -101,11 +111,12 @@ nav ul li a:hover {
 
 /* Sidebar */
 aside {
-    flex: 1;
-    background-color: #fff;
-    padding: 20px;
+    background-color: var(--bg-secondary);
+    padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 2rem;
 }
 
 aside h3 {
@@ -129,5 +140,30 @@ footer {
 
 footer p {
     font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main.container {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: static;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .post {
+        padding: 1.5rem;
+    }
+
+    aside {
+        padding: 1.5rem;
+    }
 }
 
