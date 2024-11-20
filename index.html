@@ -5,127 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your Personal Website</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ3QdGn8v7jsTQ5w7atKq5w1G92kg3L1v3mS7vF+3JVoPxPjMlV/FQO4zFlH" crossorigin="anonymous">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">[Your Name]</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hero">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <h2>[Your Name]</h2>
             </div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero text-white text-center py-5" style="background-color: #f4f4f4; background-image: url('hero-bg.jpg'); background-size: cover;">
+    <section id="hero" class="hero">
         <div class="container">
-            <h1 class="display-4">Welcome to My Personal Website</h1>
-            <p class="lead">I'm [Your Name], a passionate web developer and lifelong learner.</p>
-            <a href="#projects" class="btn btn-dark btn-lg">View My Projects</a>
+            <h1>Welcome to My Personal Website</h1>
+            <p>I'm [Your Name], a passionate web developer and lifelong learner.</p>
+            <a href="#projects" class="btn">View My Projects</a>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills py-5 bg-light">
+    <section id="skills" class="skills">
         <div class="container">
-            <h2 class="text-center mb-5">My Skills</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">HTML & CSS</h3>
-                            <p class="card-text">Building responsive and visually appealing websites.</p>
-                        </div>
-                    </div>
+            <h2>My Skills</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>HTML & CSS</h3>
+                    <p>Building responsive and visually appealing websites.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">JavaScript</h3>
-                            <p class="card-text">Interactive web features using JavaScript and frameworks.</p>
-                        </div>
-                    </div>
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Interactive web features using JavaScript and frameworks.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Python</h3>
-                            <p class="card-text">Experienced in scripting and data manipulation with Python.</p>
-                        </div>
-                    </div>
+                <div class="card">
+                    <h3>Python</h3>
+                    <p>Experienced in scripting and data manipulation with Python.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects py-5">
+    <section id="projects" class="projects">
         <div class="container">
-            <h2 class="text-center mb-5">My Projects</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Project 1</h3>
-                            <p class="card-text">A brief description of my first project.</p>
-                            <a href="#" class="btn btn-dark">Learn More</a>
-                        </div>
-                    </div>
+            <h2>My Projects</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p>A brief description of my first project.</p>
+                    <a href="#">Learn More</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Project 2</h3>
-                            <p class="card-text">A brief description of my second project.</p>
-                            <a href="#" class="btn btn-dark">Learn More</a>
-                        </div>
-                    </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p>A brief description of my second project.</p>
+                    <a href="#">Learn More</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Project 3</h3>
-                            <p class="card-text">A brief description of my third project.</p>
-                            <a href="#" class="btn btn-dark">Learn More</a>
-                        </div>
-                    </div>
+                <div class="card">
+                    <h3>Project 3</h3>
+                    <p>A brief description of my third project.</p>
+                    <a href="#">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer (Contact Section) -->
-    <footer id="contact" class="bg-dark text-white text-center py-3">
+    <footer id="contact">
         <div class="container">
             <p>&copy; 2024 [Your Name]. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBZYh6r+L+s8i7l+gF5FiF0lHjsYfb+yoPZ5umVsFY8VJg5Zm" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8Fq5W/JtnFDyjyjkc0TjlmcWwMyliJovY6mfYo0jTkP6Xv" crossorigin="anonymous"></script>
 
 </body>
 </html>
